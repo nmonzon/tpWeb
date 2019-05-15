@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: #61aaf3;
+}
+/* ------------------------- header ----------------------------------- */
+.logo img{
+    width: 100px;
+}
+.buscador,.logo{
+    display: inline;
+}
+.logo{
+    padding: 10px 10px 0px 40px;
+}
+/* --------------------------------------------------------------------- */
+
+/*------------------------ nav -------------------------------*/
+nav{
+    background-color: #ba9a2e;
+}
+nav li{
+    background-color: blueviolet;
+    /* mirar el comportamiento en inline-block */
+    display: inline-block;
+    list-style: none;
+    padding: 15px 10px;
+    margin: 5px;
+}
+nav a{
+    background-color: chartreuse;
+    text-decoration: none;
+    padding: 15px ;
+}
+nav ul{
+    text-align: center;
+}
+nav a:visited{
+    color: black:
+}
+/* ---------------------------------- */

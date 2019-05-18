@@ -36,13 +36,28 @@ input[type=search] {
 
 .logo, .ticket{
     padding: 10px 10px 10px 10px;
-}
+} 
 
 .logo img{
     width: 100px;
 }
 .buscador,.logo{
     display: inline;
+}
+
+.searchAndButton{
+    position: relative;
+}
+
+.searchAndButton .search{
+    width: 160px;
+    height: 30px;
+}
+
+.buttonSearch{
+    position: absolute;
+    top: 50%;
+    right: 5px;
 }
 
 nav{
@@ -144,4 +159,58 @@ main h2{
     display: block;
 }
 
+.paymentMethod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.leftArrowPayment img{
+    margin-left: 50px;
+    left: 50px;
+}
+
+.leftArrowPayment img, .rightArrowPayment img {
+    height: 50px;
+    width: 50px;
+    top: 50%;
+}
+
+.rightArrowpayment img{
+    right: 50px;
+    margin-right: 50px;
+}
 /* -------------------fin main-------------- */
+/* -------------------Inicio footer-------------- */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    background-color: #FFA330;
+    padding: 10px;
+}
+
+footer article{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    width: 30%;
+    height: 150px;
+}
+
+footer article h5{
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer article p{
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+/* -------------------Fin footer-------------- */

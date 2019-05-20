@@ -89,7 +89,6 @@ nav a:hover{
 nav a:visited{
     color: black;
 }
-
 /* -------------------------------fin header-------------------------------------- */
 
 /*------------------------ main -------------------------------*/
@@ -144,7 +143,7 @@ main h2{
     align-items: center;
     justify-content: center;
 }
-
+/* ----------------------------Events---------------------------------- */
 .featuredEvents{
     display: flex;
     flex-direction: row;
@@ -152,17 +151,63 @@ main h2{
     align-items: center;
     flex-wrap: wrap;
 }
-
-.featuredEvents article{
+/* .featuredEvents article{
+    margin-top: 30px;
+    width: 30%;
+} */
+.event1{
+    display:flex;
+    justify-content: center;
+    /* reemplaza las propiedades puestas sobre el articulo */
     margin-top: 30px;
     width: 30%;
 }
-
 .featuredEvents article img{
     margin: auto;
     display: block;
 }
+.container-e{
+    border: 3px solid grey;
+    padding: 10px;
+}
+.container-d{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.date-event{
+    font-weight: bold;
+    text-align: center;   
+}
+.description-info{
+    text-align: right;
+}
+.detail,.btn-buy{float: right;}
+.clear{clear: both;}
+/* div[class^='event'] {
+    margin-top: 30px;
+    width: 30%;
+    border:1px solid  #2387bc;
+} */
+.container-e:hover{
+    border: 3px solid rgb(231, 122, 19);
+    transition-duration: 0.5s;
+}
+.btn-buy:hover{
+    cursor: pointer;
+}
+.detail{
+    color: blue;
+    text-decoration: none;
+}
+.detail:visited{
+    color: blue;
+}
 
+
+
+/* ---------------------------------------------------------------------- */
 .paymentMethod{
     display: flex;
     flex-direction: row;
@@ -216,5 +261,19 @@ footer article p{
     display: block;
     padding-left: 10px;
     padding-top: 10px;
+}
+article .sn-icons{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: cemter;
+    
+}
+.sn-icons>a>img{
+    width: 45px; 
+}
+.sn-icons a{
+    display: inline-flex;
 }
 /* -------------------Fin footer-------------- */

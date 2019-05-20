@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #7e7e7e;
+    background-color: #FFF;
     font-family: Georgia, serif;
 }
 /*------------------------- colores ----------------------------------- */
@@ -39,7 +39,8 @@ input[type=search] {
 } 
 
 .logo img{
-    width: 100px;
+    height: 70px;
+    width: 250px;
 }
 .buscador,.logo{
     display: inline;
@@ -61,7 +62,7 @@ input[type=search] {
 }
 
 nav{
-    background-color: #2387bc;
+    background-color: #9E9A99;
     width: 100%;
 }
 nav li{
@@ -74,7 +75,7 @@ nav a{
     color: #fff;
     text-decoration: none;
     padding: 15px;
-    background-color: #2387bc;
+    background-color: #9E9A99;
 }
 nav ul{
     text-align: center;
@@ -93,9 +94,12 @@ nav a:visited{
 
 /*------------------------ main -------------------------------*/
 .slider img{
-    height: 400px;
-    width: 100%;
-    position: relative;
+    display: block;
+    margin: auto;
+    padding: 25px;
+    height: 350px;
+    width: 84%;
+    /*position: relative;*/
 }
 
 .leftArrow img{
@@ -191,7 +195,7 @@ footer{
     align-items: center;
     flex-wrap: nowrap;
     margin-top: 20px;
-    background-color: #FFA330;
+    background-color: #9E9A99;
     padding: 10px;
 }
 

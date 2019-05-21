@@ -48,7 +48,37 @@ input[type=search] {
     display: inline-block;
 }
 
-.searchAndButton{
+/* ----------------------Input search------------------------------ */
+fieldset{
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.buscador{
+    margin:0 auto;
+    width: max-content;
+}
+.btn-search,.search{
+    padding: 0;
+    height: 25px;
+    border: none;
+}
+.search{
+    color: #666;
+    padding-left: 10px;
+    background-color: white;
+    width: 400px;
+    min-width: 100px;
+}
+.btn-search{
+    width: 30px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+}
+.btn-search img{width: 15px;}
+/* ---------------------------------------------------------------- */
+
+
+/* .searchAndButton{
     position: relative;
     display: flex;
     justify-content: center;
@@ -62,7 +92,7 @@ input[type=search] {
     position: absolute;
     top: 50%;
     right: 5px;
-}
+} */
 
 nav{
     background-color: #F0B27A;

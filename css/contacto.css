@@ -25,6 +25,7 @@ main{
 }
 label{
     margin: 10px 0px;
+    color: #000;
 }
 .sbmit{
     font-size: 1em ;
@@ -39,6 +40,7 @@ label{
 .clear{
     clear: both;
 }
+
 form input,textarea{
     padding: 10px 15px;
     border: 1px solid #ccc;

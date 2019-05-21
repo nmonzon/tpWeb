@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +8,14 @@ body{
     background-color: #FFF;
     font-family: forte, serif;
 }
+/*------------------------- colores ----------------------------------- */
+/*
+    #783a80 violeta
+    #7e7e7e gris fuerte
+    #ccc    gris claro
+    #45afab celeste turquesa
+    #FF3F00 naranja
+*/
 /* -------------------------inicio header ----------------------------------- */
 header{
     display: flex;
@@ -39,8 +48,42 @@ input[type=search] {
 .buscador,.logo{
     display: inline-block;
 }
+/* ----------------------Input search------------------------------ */
+fieldset{
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.buscador{
+    margin:0 auto;
+    width: max-content;
+}
+.btn-search,.search{
+    padding: 0;
+    height: 25px;
+    border: none;
+}
+.search{
+    color: #666;
+    padding-left: 10px;
+    width: 400px;
+    min-width: 100px;
+}
+.btn-search{
+    width: 30px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+}
+.btn-search img{width: 15px;}
+.btn-search img,.btn-search,.search{
+    background-color: white;
+}
+.btn-search:hover{
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
 
-.searchAndButton{
+
+/* .searchAndButton{
     position: relative;
     display: flex;
     justify-content: center;
@@ -54,7 +97,7 @@ input[type=search] {
     position: absolute;
     top: 50%;
     right: 5px;
-}
+} */
 
 nav{
     background-color: #F0B27A;
@@ -77,7 +120,7 @@ nav ul{
 }
 
 nav a:hover{
-    background-color: #fff;
+    background-color: #000;
     color: #F39C12;
 }
 

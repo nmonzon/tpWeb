@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 *{
     padding: 0;
     margin: 0;
@@ -127,6 +128,8 @@ nav a:visited{
     color: black;
 }
 /* -------------------------------fin header-------------------------------------- */
+=======
+>>>>>>> Stashed changes
 
 /*------------------------ main -------------------------------*/
 .slider img{
@@ -290,48 +293,3 @@ main h2{
     margin-right: 50px;
 }
 /* -------------------fin main-------------- */
-/* -------------------Inicio footer-------------- */
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-top: 20px;
-    background-color: #F0B27A;
-    padding: 10px;
-}
-
-footer article{
-    border-color: black;
-    border-style: solid;
-    border-width: 5px;
-    width: 30%;
-    height: 150px;
-}
-
-footer article h5{
-    text-align: center;
-    padding-top: 10px;
-}
-
-footer article p{
-    display: block;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-article .sn-icons{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: cemter;
-    
-}
-.sn-icons>a>img{
-    width: 45px; 
-}
-.sn-icons a{
-    display: inline-flex;
-}
-/* -------------------Fin footer-------------- */

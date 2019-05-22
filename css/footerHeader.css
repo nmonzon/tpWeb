@@ -140,7 +140,7 @@ nav a{
     color: #CC0700;
     text-decoration: none;
     padding: 15px;
-    background-color: #F0B27A;
+    background-color: #F0B27A;    
 }
 nav ul{
     text-align: center;
@@ -151,8 +151,8 @@ nav a:hover{
     color: #F39C12;
 }
 
-nav a:visited{
-    color: black;
+/*nav a:visited{
+    color: black;*/
 }
 /* -------------------------------fin header-------------------------------------- */
 

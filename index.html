@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Index</title>
 </head>
 
 <body>
@@ -15,12 +15,18 @@
         <div class="logo"><img src="img/logojazz.jpg" alt=""></div>
         
         <form class="buscador">
-            
                 <fieldset>
-                        <input type="search" class="search" name="" id="">
+                        <form action="/action_page.php" method="get">
+                            <input type="search" class="search" name="browsers" list="browsers" id="search">
+                            <datalist id="browsers">
+                                <option value="Jazz">
+                                <option value="Musica Clasica">
+                                <option value="Medios de pago">
+                                <option value="Proximos eventos">
+                            </datalist>
+                          </form>
                         <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
                 </fieldset>
-                    
             <!-- <div class="searchAndButton">
                 <input class="search" type="text" placeholder="Buscar.." name="buscador" id="">
                 <div class="buttonSearch">
@@ -32,6 +38,10 @@
         </form>
         <div class="ticket">
             <img class="ticketImage" src="./img/entradas1.jpg" alt="Tickets">
+            <div class="divCirculo">
+                <article class="circulo"></article>
+                <p>1</p>
+            </div>
         </div>
         <nav>
             <ul>

@@ -17,10 +17,18 @@
         
         <form class="buscador">
             
-                <fieldset>
-                        <input type="search" class="search" name="" id="">
-                        <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
-                </fieldset>
+            <fieldset>
+                <form action="/action_page.php" method="get">
+                    <input type="search" class="search" name="browsers" list="browsers" id="search">
+                    <datalist id="browsers">
+                        <option value="Jazz">
+                        <option value="Musica Clasica">
+                        <option value="Medios de pago">
+                        <option value="Proximos eventos">
+                    </datalist>
+                  </form>
+                <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
+            </fieldset>
                     
             <!-- <div class="searchAndButton">
                 <input class="search" type="text" placeholder="Buscar.." name="buscador" id="">

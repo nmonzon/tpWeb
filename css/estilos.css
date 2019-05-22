@@ -5,7 +5,10 @@
     padding: 25px;
     height: 350px;
     width: 84%;
-    /*position: relative;*/
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px #666;
 }
 
 .leftArrow img{
@@ -32,6 +35,7 @@
     align-items: flex-start;
     flex-wrap: nowrap;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .step1, .step2, .step3,.step4{
@@ -67,6 +71,7 @@ main h2{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 /* .featuredEvents article{
     margin-top: 30px;

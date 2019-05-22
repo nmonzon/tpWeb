@@ -5,7 +5,7 @@
 main{
     min-width: 530px;;
     color: #ccc;
-    margin: 100px;
+    margin: 30px;
     background-color: white;
 }
 .data-container,#form1{
@@ -14,6 +14,7 @@ main{
     flex-direction: column;
 }
 .data-container{
+    margin-bottom: 50px;
     flex-direction: row;
     min-width: 850px;;
     margin-left: 50px;
@@ -26,15 +27,16 @@ main{
 label{
     margin: 10px 0px;
     color: #000;
+    margin-bottom: auto;
 }
 .sbmit{
     font-size: 1em ;
     font-weight: bold;
-    color: white;
+    color: #F0B27A;
     border: 2px solid white;
     float: right;
     padding: 8px 16px;
-    background-color: hotpink;    
+    background-color: #F7853C;    
 }
 .map{text-align: center}
 .clear{
@@ -47,14 +49,15 @@ form input,textarea{
     border-radius: 3px;
     resize: none;
 }
+
 textarea{
     height: 150px;
 }
 
 .sbmit:hover{
-    color: hotpink;
-    background-color: white;
-    border: 2px solid hotpink;
+    color: #DD4922;
+    background-color: #F09F3F;
+    border: 2px solid #DD4922;
     cursor:pointer;
     transition-duration: 0.5s;
     -webkit-box-shadow: 9px 10px 44px 4px rgba(110,110,110,1);
@@ -73,9 +76,11 @@ input::-moz-focus-outer{
 }
 
 .company-data{
+    margin:30px;
+    color: #417FF3;
     display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: space-around;
 align-content: center;
     width: 45%;
     padding: 25px 0;
@@ -90,4 +95,6 @@ align-content: center;
     display: inline;
 }
 
-
+.map{
+    color: #417FF3;
+}

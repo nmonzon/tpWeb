@@ -24,26 +24,36 @@
     right: 50px;
     margin-right: 50px;
 }
-
+/* --------------------------------Pasos de compra--------------------- */
 .steps{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
-.step1, .step2, .step3{
+.step1, .step2, .step3,.step4{
+    background-image: url("../img/");
     flex-direction: column;
     margin-right: 30px;
-    width: 10%;
+    width: 210px;
+    min-width: 183px;
+    height: 270px;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 50% 0;
+    font-size: larger;
+    
 }
 
-.steps .step1 img, .steps .step2 img,.steps .step3 img{
-    width: 100px;
-    height: 50px;
+.steps .step1 img, .steps .step2 img,.steps .step3 img,.steps .step4 img{
+    /* width: 100px;
+    height: 50px; */
+    border-radius: 50%;
 }
-
+/* ----------------------------------------------------------------- */
 main h2{
     height: 2em;
     display: flex;

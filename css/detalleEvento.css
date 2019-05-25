@@ -84,11 +84,12 @@ main section{
 }
 
 .detailEvent article{
-    width: 35%;
+    width: 40%;
     margin: 1%;
     height: 400px;
     /*background-color: greenyellow;*/
     box-sizing: border-box;
+    margin-bottom: 1%;
 }
 
 .infoEvent{
@@ -101,6 +102,18 @@ main section{
 }
 .infoEvent p{
     padding-top: 15px;
+}
+
+.infoEvent .enrollToEvent{
+    font-size: 1em ;
+    font-weight: bold;
+    color: #F0B27A;
+    border: 2px solid white;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #F7853C;
+    margin: 0 auto;
+    display: block;
 }
 
 .photoEvent{

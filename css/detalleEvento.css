@@ -78,13 +78,38 @@ main section{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: stretch;
+    align-items: center;
     align-content: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .detailEvent article{
-    width: 45%;
-    height: 500px;
-    background-color: greenyellow;
+    width: 35%;
+    margin: 1%;
+    height: 400px;
+    /*background-color: greenyellow;*/
+    box-sizing: border-box;
+}
+
+.infoEvent{
+    padding-left: 1%;
+    padding-top: 2%;
+}
+
+.infoEvent h2{
+    text-align: center;
+}
+.infoEvent p{
+    padding-top: 15px;
+}
+
+.photoEvent{
+    padding-top: 2%;
+}
+
+.photoEvent img{
+    width: 60%;
+    display: block;
+    text-align: center;
+    margin: auto;
 }

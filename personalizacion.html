@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/detalleEvento.css">
+    <link rel="stylesheet" href="css/personalizacion.css">
     <link rel="stylesheet" href="css/footerHeader.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,19 +60,99 @@
                 <img src="./img/seminario1.jpg" alt="seminario">
             </article>
             <article class="infoEvent">
-                <h2>Titulo Evento</h2>
-                <p>Fecha y hora: 25/05/2019</p>
-                <p>Organizador: Juan Perez</p>
-                <p>Descripción del evento: El Seminario, ofrece un completo programa especializado en el género del Jazz, 
-                    con un programa educativo que tiene como objetivo cubrir las necesidades de la educación musical enfocada a la 
-                    música popular y es sin lugar a dudas, una verdadera alternativa para músicos de cualquier nivel enfocados en 
-                    esta música, que encontraran en este programa una verdadera fuente de educación para seguir trabajando en esta 
-                    música que elegimos como profesión.
-                    Al mismo tiempo este Encuentro, motiva a todos los participantes a abrir Fuentes de ínter actuación ya que del 
-                    mismo participan alumnos de Chile, Ecuador, Perú, Costa Rica, Uruguay, Brasil y de varias provincias Argentinas 
-                    como Córdoba, San Luis, Salta, Provincia de Buenos Aires y Capital Federal y así contribuir a formar audiencias 
-                    que favorezcan la divulgación del Jazz.</p>
-                <button class="enrollToEvent" type="submit" class="sbmit">INSCRIBIRSE</button>
+                <h2>Personalizacion de la Invitacion</h2>
+                <form action="" class="custom">
+                    <input type="text" name="name-event"placeholder="Titulo Evento" id="name-event">
+                    <Label for="color" class="title-label">Color</Label>
+                    <div class="set-color">
+                        <div class="color-box">
+                                <div class="color"id="red"></div>
+                                <input type="radio" name="color" id="">
+                            </div>
+                        <div class="color-box">
+                                <div class="color"id="green"></div>
+                                <input type="radio" name="color" id="">
+                        </div>    
+                        <div class="color-box">
+                                <div class="color"id="blue"></div>
+                                <input type="radio" name="color" id="">
+                        </div>
+                        <div class="color-box">
+                                <div class="color"id="grey"></div>
+                                <input type="radio" name="color" id="">
+                        </div>    
+                        <div class="color-box">
+                                <div class="color"id="pink"></div>
+                                <input type="radio" name="color" id="">
+                        </div>    
+                    </div>
+                    <Label for="font-size" class="title-label">Tamaño de la Fuente</Label>
+                    <div class="set-size">
+                            <div class="size-box">
+                                    <label class="label20" for="px20">20px</label>
+                                    <input type="radio" name="font-size" id="px20">
+                                </div>
+                            <div class="size-box">
+                                <label class="label28" for="px28">28px</label>
+                                <input type="radio" name="font-size" id="px28">
+                            </div> 
+                            <div class="size-box">
+                                    <label class="label32" for="px32">32px</label>
+                                    <input type="radio" name="font-size" id="px32">
+                                </div>
+                            <div class="size-box">
+                                    <label class="label48"for="px48">48px</label>
+                                    <input type="radio" name="font-size" id="px48">
+                                </div>
+                            <div class="size-box">
+                                    <label class="label60" for="px60">60px</label>
+                                    <input type="radio" name="font-size" id="px60">
+                                </div>      
+                        </div>
+                    <input type="date" name="" id="date-time" placeholder="Fecha y hora">
+                    <Label for="date-position" class="title-label">Ubicacion</Label>
+                    <div class="set-position">
+                        <div class="position-box">
+                                <div class="position"id="bottom-right"><img src="img/position/bottom-right.jpg" alt=""></div>
+                                <input type="radio" name="position" id="">
+                        </div>  
+                        <div class="position-box">
+                                <div class="position"id="bottom-right"><img src="img/position/top-left.jpg" alt=""></div>
+                                <input type="radio" name="position" id="top-left">
+                        </div>  
+                        <div class="position-box">
+                                <div class="position"id="bottom-right"><img src="img/position/top-right.jpg" alt=""></div>
+                                <input type="radio" name="position" id="top-right">
+                        </div>  
+                    </div>
+
+                    <Label for="background" class="title-label">Fondo</Label>
+                    <div class="set-background">
+                            <div class="background-box">
+                                <div class="background" id="background1"></div>
+                                <input type="radio" name="background" id="bkg1">
+                                </div>
+                            <div class="background-box">
+                                    <div class="background" id="background2"></div>
+                                    <input type="radio" name="background" id="bkg2">
+                                </div>
+                            <div class="background-box">
+                                    <div class="background" id="background3"></div>
+                                    <input type="radio" name="background" id="bkg3">
+                                </div>
+                            <div class="background-box">
+                                    <div class="background" id="background4"></div>
+                                    <input type="radio" name="background" id="bkg4">
+                                </div>
+                            <div class="background-box">
+                                    <div class="background" id="background5"></div>
+                                    <input type="radio" name="background" id="bkg5">
+                                </div>
+                        </div>
+                    <!-- boton confirmar -->
+                    <button class="confirm" type="submit" class="sbmit">CONFIRMAR</button>
+                    <!--  -->
+                </form>
             </article>
     </main>
     <footer>

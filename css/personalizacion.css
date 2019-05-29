@@ -1,3 +1,5 @@
+body{min-width: 1000px;}
+
 h3{
     text-align: center;
     margin-top: 20px;
@@ -40,8 +42,7 @@ main section{
 
 .detailEvent article{
     width: 40%;
-    margin: 1%;
-    height: 400px;
+    margin: 4%;
     box-sizing: border-box;
     margin-bottom: 1%;
 }
@@ -52,11 +53,11 @@ main section{
 }
 
 .infoEvent h2{
-    text-align: center;
+    text-align: initial;
 }
-.infoEvent p{
+/* .infoEvent p{
     padding-top: 15px;
-}
+} */
 
 .infoEvent .enrollToEvent{
     font-size: 1em ;
@@ -80,3 +81,97 @@ main section{
     text-align: center;
     margin: auto;
 }
+
+/* --------------------------------form----------------------------- */
+form,.set-color{
+    display: flex;
+    flex-direction: column;
+}
+#name-event,#date-time{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #2681d0;
+}
+.set-color,.set-size,.set-background,.set-position{
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.set-size,.set-background,.set-position{
+    display: flex;
+}
+.color,.background{
+    padding: 25px;
+}
+ .color-box,.size-box,.background-box,.position-box{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+.size-box{
+    margin: 10px 0;
+    justify-content: center;
+}
+ #red,#green,#blue,#grey,#pink{
+     margin-bottom: 5px;
+     border-radius: 50%;
+ }
+
+ #red{background-color: crimson;}
+ #green{background-color: forestgreen;}
+ #blue{background-color: lightskyblue}
+ #grey{background-color: lightslategrey;}
+ #pink{background-color: lightpink;}
+
+.label20{font-size: 1.2em;}
+.label28{font-size: 1.4em;}
+.label32{font-size: 1.6em;}
+.label48{font-size: 1.8em;}
+.label60{font-size: 2.2em;}
+
+#background1{background-image: url(../img/background/background1.jpg);}
+#background2{background-image: url(../img/background/background2.jpg);}
+#background3{background-image: url(../img/background/background3.jpg);}
+#background4{background-image: url(../img/background/background4.jpg);}
+#background5{background-image: url(../img/background/background5.jpg);}
+
+/* clase que contiene a la imagen */
+.background{
+    background-size: cover;
+    margin: 10px 0;
+    border-radius: 25%;
+}
+/* posiciones de la fecha */
+.position img{
+    width: 50px;
+}
+.set-position{
+    width: 40%;
+}
+/* titulo label*/
+.title-label,h2{
+    margin: 10px 0;
+}
+/* boton confirmar */
+
+.confirm{
+    font-size: 1em ;
+    font-weight: bold;
+    color: #F0B27A;
+    border: 2px solid white;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #F7853C;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.confirm:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: white;
+    border:2px solid #F7853C;
+    color:#F7853C;
+
+}
+/* ----------------------------------------------------------------- */

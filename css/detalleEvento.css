@@ -86,7 +86,7 @@ main section{
 .detailEvent article{
     width: 40%;
     margin: 1%;
-    height: 400px;
+    height: auto;
     /*background-color: greenyellow;*/
     box-sizing: border-box;
     margin-bottom: 1%;

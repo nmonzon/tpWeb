@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 80%;
+    margin:30px auto;
+}
+h2{padding: 10px 0;}
+.name-person,.surname-person,.id-person{
+    width: 25%;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.person,.add-person,.value-insc{display: flex;}
+.person{
+    align-items: center;
+    margin:15px 0;
+}
+button{
+    background: white;
+    border: none;
+}
+button img{
+    width: 25px;
+    color: white;
+}
+button:hover{cursor:pointer}
+.add-person p{
+    align-self: center;
+    padding-left: 10px;
+}
+
+.val{
+    font-size: 1.5em;
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+.register{
+    font-size: 1em ;
+    font-weight: bold;
+    color: #F0B27A;
+    border: 2px solid white;
+    padding: 12px;
+    background-color: #F7853C;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.register:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: white;
+    border:2px solid #F7853C;
+    color:#F7853C;
+
+}
+
+

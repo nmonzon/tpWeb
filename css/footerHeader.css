@@ -6,7 +6,7 @@
 
 body{
     background-color: #FFF;
-    font-family: forte, serif;
+    font-family: bembo, serif;
 }
 /*------------------------- colores ----------------------------------- */
 /*
@@ -193,7 +193,7 @@ article .sn-icons{
     height: 80%;
     display: flex;
     justify-content: center;
-    align-items: cemter;
+    align-items: center;
     
 }
 

@@ -93,6 +93,7 @@ main section{
 }
 
 .infoEvent{
+    height: 500px;
     padding-left: 1%;
     padding-top: 2%;
 }
@@ -126,3 +127,4 @@ main section{
     text-align: center;
     margin: auto;
 }
+

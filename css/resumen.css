@@ -45,7 +45,7 @@ table, th, td {
     padding: 10px;
     border-radius: 10px; 
     border:none;
-    color: #FFF;
+    color: #FFF ;
 }
 
 /*p{
@@ -64,7 +64,7 @@ color: #FFF;
 button{
     background: white;
     border: none;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 button:hover{cursor:pointer}
 {

@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/personalizacion.js"></script>
     <title>Personalizacion</title>
 </head>
 
@@ -57,17 +58,21 @@
     <main>
         <section class="detailEvent">
             <article class="photoEvent">
-                <img src="./img/seminario1.jpg" alt="seminario">
+                <!-- ------------------------- -->
+                <h5 id="newNameEvent"></h5>
+
+                <!-- ------------------------- -->
+                <!-- <img src="./img/seminario1.jpg" alt="seminario"> -->
             </article>
             <article class="infoEvent">
                 <h2>Personalizacion de la Invitacion</h2>
                 <form action="" class="custom">
-                    <input type="text" name="name-event"placeholder="Titulo Evento" id="name-event">
+                    <input type="text" name="name-event"placeholder="Titulo Evento" id="name-event" onkeyup='changeNameEvent()'>
                     <Label for="color" class="title-label">Color</Label>
                     <div class="set-color">
                         <div class="color-box">
                                 <div class="color"id="red"></div>
-                                <input type="radio" name="color" id="">
+                                <input type="radio" name="color" id="" checked='changeColor()'>
                             </div>
                         <div class="color-box">
                                 <div class="color"id="green"></div>

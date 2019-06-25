@@ -7,13 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
     <title>Index</title>
 </head>
 
 <body>
     <header>
         <div class="logo"><img src="img/logojazz.jpg" alt=""></div>
-        
         <form class="buscador">
                 <fieldset>
                         <form action="/action_page.php" method="get">
@@ -43,14 +44,18 @@
                 <p>1</p>
             </div>
         </div>
-        <nav>
+        <!-- ------------------------------------------------------------------------------ -->
+        <nav class="menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="index.html" class="activo">Inicio</a></li> 
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!-- ******************************************** -->
+        <a class="desplegable"></a>
+        <!-- ******************************************** -->
     </header>
     <main>
         <div class="slider">

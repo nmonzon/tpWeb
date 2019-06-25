@@ -62,11 +62,9 @@ input[type=search] {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .ticket p{
     position: absolute;
 }
-
 .logo img{
     height: 80px;
     width: 260px;
@@ -131,8 +129,6 @@ nav{
     width: 100%;
 }
 nav li{
-    /* mirar el comportamiento en inline-block */
-    display: inline-block;
     list-style: none;
     padding: 15px 10px;
 }
@@ -158,25 +154,27 @@ nav a:hover{
 /* -------------------------------fin header-------------------------------------- */
 
 /* -------------------Inicio footer-------------- */
-footer{
+ 
+footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
-    margin-top: 20px;
     background-color: #F0B27A;
-    padding: 10px;
+ 
 }
 
-footer article{
+
+footer article {
     border-color: black;
     border-style: solid;
     border-width: 5px;
-    width: 30%;
+    width: 100%;
     height: 150px;
     align-items: center;
+    text-align: center;
 }
+
+
 
 footer article h5{
     text-align: center;
@@ -188,19 +186,131 @@ footer article p{
     padding-left: 10px;
     padding-top: 10px;
 }
-article .sn-icons{
+article .sn-icons {
     width: 100%;
     height: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     
+}
+
+article nav ul {
+    display: flex;
+    justify-content: center;
 }
 
 .sn-icons>a>img{
     width: 45px; 
 }
-.sn-icons a{
+/* .sn-icons a{
     display: inline-flex;
-}
+} */
+
 /* -------------------Fin footer-------------- */
+.logo{
+    order:0;
+}
+.ticket{
+    position:relative;
+    order:1
+}
+.buscador{
+    order:3
+}
+.menu{
+    order: 5;
+    margin-top: 30px;
+} 
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* --------------------MENU RESPONSIVE------------------------ */
+/* Configuracion del boton Hamburguesa */
+a.desplegable{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color: #2387bc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../img/hamburger.gif);
+    cursor: pointer;
+
+}
+.menu{
+    
+    display: none;
+}
+/*47em*/
+@media screen and (min-width:46em){
+    
+    .menu{
+        display: block;
+    }
+    a.desplegable{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+/* ************************************* */
+     .logo{
+        order:0;
+        align-self: center;
+    }
+    .ticket{
+        order:2
+    }
+    .buscador{
+        order:1
+    }
+    .menu{
+        order: 5;
+        margin-top: 0px
+
+    } 
+    header {
+        position: initial;
+        top: initial;
+        background-color: white;
+        z-index: initial;
+    }
+
+    footer article{
+        width: 30%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    article .sn-icons{
+        justify-content: space-around;
+    
+    }
+    
+
+}
+@media screen and (min-width: 54em){
+	.buscador{
+        order: 1;
+    }
+    .ticket{
+        order:2;
+    }
+}
+/* ----------------------------------------------------------- */

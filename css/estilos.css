@@ -17,6 +17,7 @@
 }
 
 .leftArrow img, .rightArrow img {
+    display: none;
     height: 50px;
     width: 50px;
     position: absolute;
@@ -33,7 +34,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -46,9 +47,10 @@
     min-width: 183px;
     height: 270px;
     padding: 25px;
-    border: 1px solid gray;
+    border: none;
+    /* border: 1px solid gray; */
     border-radius: 50% 0;
-    font-size: larger;
+    font-size: 1.3em;
     
 }
 
@@ -82,7 +84,7 @@ main h2{
     justify-content: center;
     /* reemplaza las propiedades puestas sobre el articulo */
     margin-top: 30px;
-    width: 30%;
+    width: 60%;
 }
 .featuredEvents article img{
     margin: auto;
@@ -153,7 +155,7 @@ main h2{
 /* ---------------------------------------------------------------------- */
 .paymentMethod{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
@@ -165,6 +167,7 @@ main h2{
 }
 
 .leftArrowPayment img, .rightArrowPayment img {
+    display: none;
     height: 50px;
     width: 50px;
     top: 50%;
@@ -175,3 +178,22 @@ main h2{
     margin-right: 50px;
 }
 /* -------------------fin main-------------- */
+/* --------------------CONFIGURACION RESPONSIVE------------------------ */
+/******30 EMs dispositivos pequeños************/
+@media screen and (min-width:30em) and (min-width:37.5em){
+    .event1{
+        width: 40%;
+    }
+    .paymentMethod{
+        flex-direction: row;
+    }
+    .leftArrowPayment img, .rightArrowPayment img {
+        display: block;
+}
+}
+/* -------------------- 48 EMs dispositivos medianos ------------------------ */
+@media screen and (min-width:50em){
+    .event1{
+        width: 30%;
+    }
+}

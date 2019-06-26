@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/footerHeader.css">
     <link rel="stylesheet" href="css/formulario.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/formulario.js"></script>
     <title>formulario</title>
 </head>
 <body>
     <header>
         <div class="logo"><img src="img/logojazz.jpg" alt=""></div>
-        
         <form class="buscador">
-            
-            <fieldset>
-                <form action="/action_page.php" method="get">
-                    <input type="search" class="search" name="browsers" list="browsers" id="search">
-                    <datalist id="browsers">
-                        <option value="Jazz">
-                        <option value="Musica Clasica">
-                        <option value="Medios de pago">
-                        <option value="Proximos eventos">
-                    </datalist>
-                  </form>
-                <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
-            </fieldset>
-                    
+                <fieldset>
+                        <form action="/action_page.php" method="get">
+                            <input type="search" class="search" name="browsers" list="browsers" id="search">
+                            <datalist id="browsers">
+                                <option value="Jazz">
+                                <option value="Musica Clasica">
+                                <option value="Medios de pago">
+                                <option value="Proximos eventos">
+                            </datalist>
+                          </form>
+                        <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
+                </fieldset>
             <!-- <div class="searchAndButton">
                 <input class="search" type="text" placeholder="Buscar.." name="buscador" id="">
                 <div class="buttonSearch">
@@ -38,48 +38,58 @@
         </form>
         <div class="ticket">
             <img class="ticketImage" src="./img/entradas1.jpg" alt="Tickets">
-             <div class="divCirculo">
+            <div class="divCirculo" id="divCirculo">
                 <article class="circulo"></article>
-                <p>1</p>
+                <p id="circuloNumero"></p>
             </div>
         </div>
-        <nav>
+        <!-- ------------------------------------------------------------------------------ -->
+        <nav class="menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="index.html" class="activo">Inicio</a></li> 
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!-- ******************************************** -->
+        <a class="desplegable"></a>
+        <!-- ******************************************** -->
     </header>
     <main>
-        <form action="">
+        <form action="" id="myForm">
             <h2 class="">TITULO EVENTO</h2>
             <h3>INSCRIPCION</h3>
-            <div class="person">
-                <input type="text" class="name-person" name="name" id="">
-                <input type="text" class="surname-person" name="surname" id="">
-                <input type="text" class="id-person" name="id" id="">
-                <button type="submit"><img src="img/menos.png" alt=""></button>
+            <div id ="agregado">
+                <div class="person">
+                    <input type="text" class="name-person" name="name" id="">
+                    <input type="text" class="surname-person" name="surname" id="">
+                    <!-- readonly para bloquear la modificacion del input precio  -->
+                    <input type="text" class="precio" name="id" id="" value="100.00" readonly="readonly">
+                    <button ><img src="img/menos.png" alt="" onclick="return false"></button>
+                </div>
+                <div class="person">
+                    <input type="text" class="name-person" name="name" id="">
+                    <input type="text" class="surname-person" name="surname" id="">
+                    <input type="text" class="precio" name="id" id="">
+                    <button  id="eliminaPersona" onclick="return eliminarPersona()"><img src="img/menos.png" alt=""></button>
+                </div>
+                <div class="person">
+                    <input type="text" class="name-person" name="name" id="">
+                    <input type="text" class="surname-person" name="surname" id="">
+                    <input type="text" class="precio" name="id" id="">
+                    <button id="eliminaPersona" onclick="return eliminarPersona()"><img src="img/menos.png" alt=""></button>
+                </div>
+
             </div>
-            <div class="person">
-                <input type="text" class="name-person" name="name" id="">
-                <input type="text" class="surname-person" name="surname" id="">
-                <input type="text" class="id-person" name="id" id="">
-                <button type="submit"><img src="img/menos.png" alt=""></button>
-            </div>
-            <div class="person">
-                <input type="text" class="name-person" name="name" id="">
-                <input type="text" class="surname-person" name="surname" id="">
-                <input type="text" class="id-person" name="id" id="">
-                <button type="submit"><img src="img/menos.png" alt=""></button>
-            </div>
+            
+            
             <div class="add-person">
-                <button type="submit"><img src="img/mas.png" alt=""></button>
+                <button type=""><img src="img/mas.png" alt="" onclick=" return agregaPersona()"></button>
                 <p>Agregar Persona</p>
             </div>
             <div class="value-insc">
-                <div class="val">$000.-</div>
+                <div class="val" id="val">$000.-</div>
                 <!-- boton inscripcion  -->
                 <button class="register" type="submit" class="sbmit">INSCRIBIRSE</button>
                 <!-- ------------------ -->

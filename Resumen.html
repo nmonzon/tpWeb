@@ -15,22 +15,19 @@
 <body>
     <header>
         <div class="logo"><img src="img/logojazz.jpg" alt=""></div>
-        
         <form class="buscador">
-            
-            <fieldset>
-                <form action="/action_page.php" method="get">
-                    <input type="search" class="search" name="browsers" list="browsers" id="search">
-                    <datalist id="browsers">
-                        <option value="Jazz">
-                        <option value="Musica Clasica">
-                        <option value="Medios de pago">
-                        <option value="Proximos eventos">
-                    </datalist>
-                  </form>
-                <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
-            </fieldset>
-                    
+                <fieldset>
+                        <form action="/action_page.php" method="get">
+                            <input type="search" class="search" name="browsers" list="browsers" id="search">
+                            <datalist id="browsers">
+                                <option value="Jazz">
+                                <option value="Musica Clasica">
+                                <option value="Medios de pago">
+                                <option value="Proximos eventos">
+                            </datalist>
+                          </form>
+                        <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
+                </fieldset>
             <!-- <div class="searchAndButton">
                 <input class="search" type="text" placeholder="Buscar.." name="buscador" id="">
                 <div class="buttonSearch">
@@ -42,19 +39,23 @@
         </form>
         <div class="ticket">
             <img class="ticketImage" src="./img/entradas1.jpg" alt="Tickets">
-             <div class="divCirculo">
+            <div class="divCirculo" id="divCirculo">
                 <article class="circulo"></article>
-                <p>1</p>
+                <p id="circuloNumero"></p>
             </div>
         </div>
-        <nav>
+        <!-- ------------------------------------------------------------------------------ -->
+        <nav class="menu">
             <ul>
-                <li><a href="#">Inicio</a></li> 
+                <li><a href="index.html" class="activo">Inicio</a></li> 
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!-- ******************************************** -->
+        <a class="desplegable"></a>
+        <!-- ******************************************** -->
     </header>
     <main>
         <form action="">

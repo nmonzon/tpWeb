@@ -8,7 +8,7 @@ form{
     margin:30px auto;
 }
 h2{padding: 10px 0;}
-.name-person,.surname-person,.id-person{
+.name-person,.surname-person,.precio{
     width: 25%;
     margin-right: 15px;
     border-radius: 5px;
@@ -61,5 +61,6 @@ button:hover{cursor:pointer}
     color:#F7853C;
 
 }
+
 
 

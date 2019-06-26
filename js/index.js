@@ -1,5 +1,6 @@
 var i = Number(0);
 function contadorEntradas() {
+    //document.getElementById('divCirculo').style.visibility = "visible"; 
     //verifica si el navegador es compatible con almacenamiento en el localStorage
     if (Storage !== "undefined") {
         // guardamos en el localStorage un elemento clave/valor
@@ -16,6 +17,7 @@ function contadorEntradas() {
 }
 
 window.onload = function () {
+    // document.getElementById('divCirculo').style.visibility = "hidden"; 
     console.log("se recargo el documento");
     //cuando se vuelve a recargar el documento,obtenemos el numero que quedo almacenado en el localStorage
     document.getElementById('circuloNumero').innerHTML = localStorage.getItem("contadorEnStorage");

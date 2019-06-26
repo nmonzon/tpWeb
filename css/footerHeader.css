@@ -52,6 +52,7 @@ input[type=search] {
 }
 
 .divCirculo .circulo{
+
     position: relative;
 }
 
@@ -247,8 +248,8 @@ a.desplegable{
     
     display: none;
 }
-/*47em*/
-@media screen and (min-width:46em){
+/* 47em (min-width:37.5em) */
+@media screen and (min-width:30em) and (min-width:48.68em){
     
     .menu{
         display: block;
@@ -263,11 +264,11 @@ a.desplegable{
     }
 /* ************************************* */
      .logo{
-        order:0;
+        order:-1;
         align-self: center;
     }
     .ticket{
-        order:2
+        order:0
     }
     .buscador{
         order:1
@@ -298,13 +299,25 @@ a.desplegable{
         padding: 10px;
     }
     
-    article .sn-icons{
+    article .sn-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    /* article .sn-icons{
         justify-content: space-around;
     
-    }
+    } */
     
 
 }
+@media screen and (min-width:48.5em){
+    article nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+}
+
+
 @media screen and (min-width: 54em){
 	.buscador{
         order: 1;
@@ -314,3 +327,6 @@ a.desplegable{
     }
 }
 /* ----------------------------------------------------------- */
+/* #divCirculo{
+   visibility: hidden; 
+} */

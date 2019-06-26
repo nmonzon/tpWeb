@@ -7,9 +7,9 @@ h3{
 main section{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 
 .event1{
@@ -17,7 +17,7 @@ main section{
     justify-content: center;
     /* reemplaza las propiedades puestas sobre el articulo */
     margin-top: 30px;
-    width: 30%;
+    width: 55%;
 }
 .relatedEvents article img{
     margin: auto;
@@ -76,7 +76,7 @@ main section{
 
 .detailEvent{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
@@ -84,7 +84,7 @@ main section{
 }
 
 .detailEvent article{
-    width: 40%;
+    width: 95%;
     margin: 1%;
     height: auto;
     /*background-color: greenyellow;*/
@@ -106,6 +106,7 @@ main section{
 }
 
 .infoEvent .enrollToEvent{
+    width: 60%;
     font-size: 1em ;
     font-weight: bold;
     color: #F0B27A;
@@ -118,13 +119,32 @@ main section{
 }
 
 .photoEvent{
+    width: 100%;
     padding-top: 2%;
 }
 
 .photoEvent img{
-    width: 60%;
+    width: 85%;
     display: block;
     text-align: center;
     margin: auto;
 }
 
+
+/*************************RESPONSIVE****************************/
+@media screen and (min-width:30em) and (min-width:37.5em){
+    .event1{
+        width: 40%;
+    }
+}
+/* -------------------- 48 EMs dispositivos medianos ------------------------ */
+@media screen and (min-width:50em){
+    .event1{
+        width: 30%;
+    }
+}
+@media screen and (min-width:70.9em){
+    .event1{
+        width: 20%;
+    }
+}

@@ -35,7 +35,7 @@ main section{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
     justify-content: center;
 }
@@ -73,6 +73,9 @@ main section{
 
 .photoEvent{
     padding-top: 2%;
+    background-color: gray;
+    height: 500px;
+    position: relative;
 }
 
 .photoEvent img{
@@ -80,6 +83,12 @@ main section{
     display: block;
     text-align: center;
     margin: auto;
+}
+
+#newNameEvent{
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
 
 /* --------------------------------form----------------------------- */

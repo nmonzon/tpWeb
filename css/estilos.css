@@ -11,23 +11,61 @@
     box-shadow: 2px 2px 10px #666;
 }
 
-.leftArrow img{
-    margin-left: 50px;
-    left: 50px;
+.slider{
+    position: relative;
+    margin: auto;
 }
 
-.leftArrow img, .rightArrow img {
+.mySlides {
     display: none;
+}
+
+.firstImage{
+    display: block;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.leftArrow input{
+    margin-left: 50px;
+    left: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.leftArrow input, .rightArrow input {
+    /*display: none;*/
     height: 50px;
     width: 50px;
     position: absolute;
     top: 50%;
 }
 
-.rightArrow img{
+.rightArrow input{
     right: 50px;
     margin-right: 50px;
+    transition: 0.6s ease;
 }
+
+
 /* --------------------------------Pasos de compra--------------------- */
 .steps{
     display: flex;

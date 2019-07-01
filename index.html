@@ -60,13 +60,22 @@
     </header>
     <main>
         <div class="slider">
-            <img src="./img/slider-sonwriting.jpg" alt="">
-        </div>
-        <div class="leftArrow">
-            <img src="./img/leftArrow.png" alt="left arrow">
-        </div>
-        <div class="rightArrow">
-            <img src="./img/rightArrow.png" alt="right arrow">
+            
+            <div class="mySlides fade firstImage">
+                <img src="./img/slider-sonwriting.jpg" alt="firstImage" style="width:85%">
+            </div>
+            <div class="mySlides fade">
+                    <img src="./img/Evento2.jpg" alt="secondImage">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/Evento3.jpg" alt="thirdImage">
+            </div>
+            <div class="leftArrow">
+                <input type="image" src="./img/leftArrow.png" onclick="plusSlides(-1)" alt="left arrow" />
+            </div>
+            <div class="rightArrow">
+                <input type="image" src="./img/rightArrow.png" onclick="plusSlides(1)" alt="right arrow" />
+            </div>
         </div>
         <section class="steps">
             <article class="step1">

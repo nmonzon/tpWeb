@@ -6,26 +6,48 @@ function changeNameEvent(){
 
 function changeColour(value)
 {
-    var background = document.body.style.backgroundColor;;
     switch(value)
     {
         case 'b':
-            background = "lightskyblue";
+            color = "lightskyblue";
         break;
         case 'r':
-            background = "crimson";
+            color = "crimson";
         break;
         case 'gr':
-            background = "lightslategrey";
+            color = "lightslategrey";
         break;
         case 'g':
-            background = "forestgreen";
+            color = "forestgreen";
         break;
         case 'p':
-            background = "lightpink";
+            color = "lightpink";
         break;
     }
-    document.getElementsByClassName("photoEvent")[0].style.backgroundColor = background;
+    document.getElementById("newNameEvent").style.color = color;
+}
+
+function changeBackgroundColour(value)
+{
+    switch(value)
+    {
+        case 'bkg1':
+            background = "url(./img/background/background1.jpg)";
+        break;
+        case 'bkg2':
+            background = "url(./img/background/background2.jpg)";
+        break;
+        case 'bkg3':
+            background = "url(./img/background/background3.jpg)";
+        break;
+        case 'bkg4':
+            background = "url(./img/background/background4.jpg)";
+        break;
+        case 'bkg5':
+            background = "url(./img/background/background5.jpg)";
+        break;
+    }
+    document.getElementsByClassName("photoEvent")[0].style.backgroundImage = background;
 }
 
 function changeFontSize(value){

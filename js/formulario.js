@@ -1,7 +1,17 @@
+var j = 0;
+
 function agregaPersona() {
-    var agregado = document.getElementById('agregado');
-    
-var form = document.getElementById('myForm');
+    j++;
+    var select = document.getElementById('person');
+    var clone = select.cloneNode(true);
+
+    document.getElementById("nuevaPersona").appendChild(clone);
+    clone.addEventListener('click', eliminarPersona);
+
+    return false;
+    /*var agregado = document.getElementById('agregado');
+
+    var form = document.getElementById('myForm');
 
     var body = document.getElementsByTagName('body');
 
@@ -9,22 +19,25 @@ var form = document.getElementById('myForm');
     person.className = "person";
 
     var input1 = document.createElement('input');
-    input1.type ="text";
-    input1.className ="name-person";
+    input1.type = "text";
+    input1.className = "nameSurname-person";
     input1.name = "name";
+    input1.placeholder = "Nombre y apellido"
 
     var input2 = document.createElement('input');
-    input2.type ="text";
-    input2.className ="surname-person";
+    input2.type = "text";
+    input2.className = "dni-person";
     input2.name = "surname";
+    input2.placeholder = "dni"
 
     var input3 = document.createElement('input');
-    input3.type ="text";
-    input3.className ="precio";
+    input3.type = "text";
+    input3.className = "precio";
     input3.name = "id";
+    input3.value = "100.00";
 
-    var image =document.createElement("img");
-    image.setAttribute("src","img/menos.png");
+    var image = document.createElement("img");
+    image.setAttribute("src", "img/menos.png");
 
     var btnImage = document.createElement('button');
     btnImage.appendChild(image);
@@ -39,16 +52,19 @@ var form = document.getElementById('myForm');
 
     agregado.appendChild(person);
     return false;
+    */
 }
 
 function eliminarPersona() {
-    //parentNode devuelve el nodo padre del elemento eliminaPersona
+    var select = document.getElementById('nuevaPersona');
+    select.removeChild(select.lastChild);
+    /*//parentNode devuelve el nodo padre del elemento eliminaPersona
+
     var padreBtnImage = document.getElementById('eliminaPersona').parentNode;
     //borra al "padre"
     padreBtnImage.remove();
     // se llama a la funcion preventDefault que evita que el boton mande el formulario o algo asi 
     event.preventDefault();
+    //return false;*/
     return false;
 }
-
-

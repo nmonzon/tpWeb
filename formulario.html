@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,23 @@
     <script src="js/formulario.js"></script>
     <title>formulario</title>
 </head>
+
 <body>
     <header>
         <div class="logo"><img src="img/logojazz.jpg" alt=""></div>
         <form class="buscador">
-                <fieldset>
-                        <form action="/action_page.php" method="get">
-                            <input type="search" class="search" name="browsers" list="browsers" id="search">
-                            <datalist id="browsers">
+            <fieldset>
+                <form action="/action_page.php" method="get">
+                    <input type="search" class="search" name="browsers" list="browsers" id="search">
+                    <datalist id="browsers">
                                 <option value="Jazz">
                                 <option value="Musica Clasica">
                                 <option value="Medios de pago">
                                 <option value="Proximos eventos">
                             </datalist>
-                          </form>
-                        <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>        
-                </fieldset>
+                </form>
+                <button type="submit" class="btn-search"><img src="img/search (1).png" alt="" ></button>
+            </fieldset>
             <!-- <div class="searchAndButton">
                 <input class="search" type="text" placeholder="Buscar.." name="buscador" id="">
                 <div class="buttonSearch">
@@ -46,9 +48,9 @@
         <!-- ------------------------------------------------------------------------------ -->
         <nav class="menu">
             <ul>
-                <li><a href="index.html" class="activo">Inicio</a></li> 
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="personalizacion.html">Personalización</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -60,19 +62,19 @@
         <form action="" id="myForm">
             <h2 class="">TITULO EVENTO</h2>
             <h3>INSCRIPCION</h3>
-            <div id ="agregado">
+            <div id="agregado">
                 <div class="person">
-                    <input type="text" class="name-person" name="name" id="">
-                    <input type="text" class="surname-person" name="surname" id="">
+                    <input type="text" placeholder="Nombre y apellido" class="name-person" name="name" id="">
+                    <input type="number" placeholder="Dni" class="surname-person" name="surname" id="">
                     <!-- readonly para bloquear la modificacion del input precio  -->
                     <input type="text" class="precio" name="id" id="" value="100.00" readonly="readonly">
-                    <button ><img src="img/menos.png" alt="" onclick="return false"></button>
+                    <button><img src="img/menos.png" alt="" onclick="return false"></button>
                 </div>
                 <div class="person">
                     <input type="text" class="name-person" name="name" id="">
                     <input type="text" class="surname-person" name="surname" id="">
                     <input type="text" class="precio" name="id" id="">
-                    <button  id="eliminaPersona" onclick="return eliminarPersona()"><img src="img/menos.png" alt=""></button>
+                    <button id="eliminaPersona" onclick="return eliminarPersona()"><img src="img/menos.png" alt=""></button>
                 </div>
                 <div class="person">
                     <input type="text" class="name-person" name="name" id="">
@@ -82,8 +84,8 @@
                 </div>
 
             </div>
-            
-            
+
+
             <div class="add-person">
                 <button type=""><img src="img/mas.png" alt="" onclick=" return agregaPersona()"></button>
                 <p>Agregar Persona</p>
@@ -108,24 +110,25 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="personalizacion.html">Personalización</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </article>
         <article>
-            <h5>Redes sociales</h5> 
+            <h5>Redes sociales</h5>
             <div class="sn-icons">
                 <a href="https://www.facebook.com"><img src="img/fb.svg" alt=""></a>
                 <a href="https://www.twitter.com"><img src="img/twitter.svg" alt=""></a>
                 <a href="https://www.youtube.com"><img src="img/youtube.svg" alt=""></a>
                 <a href="#"><img src="img/whatsapp.svg" alt=""></a>
-                <a href="mailto:nicolasmonzon0@gmail.com" ><img src="img/gmail.svg" alt=""></a>
+                <a href="mailto:nicolasmonzon0@gmail.com"><img src="img/gmail.svg" alt=""></a>
                 <a href="https://www.instagram.com"><img src="img/instagram.svg" alt=""></a>
                 <a href="https://www.pinterest.com"><img src="img/pinterest.svg" alt=""></a>
             </div>
         </article>
     </footer>
 </body>
+
 </html>

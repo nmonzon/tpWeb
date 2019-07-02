@@ -1,12 +1,14 @@
-body{min-width: 1000px;}
+body {
+    min-width: 1000px;
+}
 
-h3{
+h3 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-main section{
+main section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -14,24 +16,25 @@ main section{
     align-content: center;
 }
 
-.relatedEvents article img{
+.relatedEvents article img {
     margin: auto;
     display: block;
 }
 
-
-.description-info{
+.description-info {
     text-align: right;
 }
 
-.clear{clear: both;}
+.clear {
+    clear: both;
+}
 
-.container-e:hover{
+.container-e:hover {
     border: 3px solid rgb(231, 122, 19);
     transition-duration: 0.5s;
 }
 
-.detailEvent{
+.detailEvent {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -40,27 +43,29 @@ main section{
     justify-content: center;
 }
 
-.detailEvent article{
+.detailEvent article {
     width: 40%;
     margin: 4%;
     box-sizing: border-box;
     margin-bottom: 1%;
 }
 
-.infoEvent{
+.infoEvent {
     padding-left: 1%;
     padding-top: 2%;
 }
 
-.infoEvent h2{
+.infoEvent h2 {
     text-align: initial;
 }
+
+
 /* .infoEvent p{
     padding-top: 15px;
 } */
 
-.infoEvent .enrollToEvent{
-    font-size: 1em ;
+.infoEvent .enrollToEvent {
+    font-size: 1em;
     font-weight: bold;
     color: #F0B27A;
     border: 2px solid white;
@@ -71,100 +76,178 @@ main section{
     display: block;
 }
 
-.photoEvent{
+.photoEvent {
     padding-top: 2%;
     background-color: gray;
     height: 500px;
     position: relative;
 }
 
-.photoEvent img{
+.photoEvent img {
     width: 60%;
     display: block;
     text-align: center;
     margin: auto;
 }
 
-#newNameEvent{
+#newNameEvent {
     position: absolute;
     left: 50%;
     top: 50%;
 }
 
+
 /* --------------------------------form----------------------------- */
-form,.set-color{
+
+form,
+.set-color {
     display: flex;
     flex-direction: column;
 }
-#name-event,#date-time{
+
+#name-event,
+#date-time {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #2681d0;
 }
-.set-color,.set-size,.set-background,.set-position{
+
+.set-color,
+.set-size,
+.set-background,
+.set-position {
     width: 75%;
     flex-direction: row;
     justify-content: space-between;
 }
-.set-size,.set-background,.set-position{
+
+.set-size,
+.set-background,
+.set-position {
     display: flex;
 }
-.color,.background{
+
+.color,
+.background {
     padding: 25px;
 }
- .color-box,.size-box,.background-box,.position-box{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
-.size-box{
+
+.color-box,
+.size-box,
+.background-box,
+.position-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.size-box {
     margin: 10px 0;
     justify-content: center;
 }
- #red,#green,#blue,#grey,#pink{
-     margin-bottom: 5px;
-     border-radius: 50%;
- }
 
- #red{background-color: crimson;}
- #green{background-color: forestgreen;}
- #blue{background-color: lightskyblue}
- #grey{background-color: lightslategrey;}
- #pink{background-color: lightpink;}
+#red,
+#green,
+#blue,
+#grey,
+#pink {
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
 
-.label20{font-size: 1.2em;}
-.label28{font-size: 1.4em;}
-.label32{font-size: 1.6em;}
-.label48{font-size: 1.8em;}
-.label60{font-size: 2.2em;}
+#red {
+    background-color: crimson;
+}
 
-#background1{background-image: url(../img/background/background1.jpg);}
-#background2{background-image: url(../img/background/background2.jpg);}
-#background3{background-image: url(../img/background/background3.jpg);}
-#background4{background-image: url(../img/background/background4.jpg);}
-#background5{background-image: url(../img/background/background5.jpg);}
+#green {
+    background-color: forestgreen;
+}
+
+#blue {
+    background-color: lightskyblue
+}
+
+#grey {
+    background-color: lightslategrey;
+}
+
+#pink {
+    background-color: lightpink;
+}
+
+.label20 {
+    font-size: 1.2em;
+}
+
+.label28 {
+    font-size: 1.4em;
+}
+
+.label32 {
+    font-size: 1.6em;
+}
+
+.label48 {
+    font-size: 1.8em;
+}
+
+.label60 {
+    font-size: 2.2em;
+}
+
+#background1 {
+    background-image: url(../img/background/background1.jpg);
+}
+
+#background2 {
+    background-image: url(../img/background/background2.jpg);
+}
+
+#background3 {
+    background-image: url(../img/background/background3.jpg);
+}
+
+#background4 {
+    background-image: url(../img/background/background4.jpg);
+}
+
+#background5 {
+    background-image: url(../img/background/background5.jpg);
+}
+
 
 /* clase que contiene a la imagen */
-.background{
+
+.background {
     background-size: cover;
     margin: 10px 0;
     border-radius: 25%;
 }
+
+
 /* posiciones de la fecha */
-.position img{
+
+.position img {
     width: 50px;
 }
-.set-position{
+
+.set-position {
     width: 40%;
 }
+
+
 /* titulo label*/
-.title-label,h2{
+
+.title-label,
+h2 {
     margin: 10px 0;
 }
+
+
 /* boton confirmar */
 
-.confirm{
-    font-size: 1em ;
+.confirm {
+    font-size: 0.8em;
     font-weight: bold;
     color: #F0B27A;
     border: 2px solid white;
@@ -175,17 +258,24 @@ form,.set-color{
     border-radius: 5px;
 }
 
-.confirm:hover{
+.confirm:hover {
     cursor: pointer;
     transition: 0.4s;
     background-color: white;
-    border:2px solid #F7853C;
-    color:#F7853C;
-
+    border: 2px solid #F7853C;
+    color: #F7853C;
 }
+
+#dateEvent {
+    bottom: 20px;
+    position: absolute;
+}
+
+
 /* ----------------------------------------------------------------- */
 
 
 /* *************************estilos js**************************** */
+
 
 /* *************************************************************** */

@@ -1,14 +1,17 @@
-
-*{
+        * {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: #FFF;
     font-family: bembo, serif;
 }
+
+
 /*------------------------- colores ----------------------------------- */
+
+
 /*
     #783a80 violeta
     #7e7e7e gris fuerte
@@ -16,8 +19,11 @@ body{
     #45afab celeste turquesa
     #FF3F00 naranja
 */
+
+
 /* -------------------------inicio header ----------------------------------- */
-header{
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,18 +36,19 @@ input[type=search] {
     height: 25px;
 }
 
-.ticketImage{
+.ticketImage {
     width: 100px;
     height: 100px;
     margin-right: 15px;
     position: relative;
 }
 
-.logo, .ticket{
+.logo,
+.ticket {
     padding: 10px 10px 10px 10px;
-} 
+}
 
-.ticket .divCirculo{
+.ticket .divCirculo {
     top: 10px;
     right: 15px;
     position: absolute;
@@ -51,61 +58,80 @@ input[type=search] {
     background-color: #CC0700;
 }
 
-.divCirculo .circulo{
-
+.divCirculo .circulo {
     position: relative;
 }
 
-.divCirculo p{
+.divCirculo p {
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.ticket p{
+
+.ticket p {
     position: absolute;
 }
-.logo img{
+
+.logo img {
     height: 80px;
     width: 260px;
-
 }
-.buscador,.logo{
+
+.buscador,
+.logo {
     display: inline-block;
 }
+
+
 /* ----------------------Input search------------------------------ */
-fieldset{
+
+fieldset {
     border-radius: 5px;
     border: 1px solid grey;
 }
-.buscador{
-    margin:0 auto;
+
+.buscador {
+    margin: 0 auto;
     width: max-content;
 }
-.btn-search,.search{
+
+.btn-search,
+.search {
     padding: 0;
     height: 25px;
     border: none;
 }
-.search{
+
+.search {
     color: #666;
     padding-left: 10px;
     width: 400px;
     min-width: 100px;
 }
-.btn-search{
+
+.btn-search {
     width: 30px;
     height: 30px;
     border-radius: 0 5px 5px 0;
 }
-.btn-search img{width: 15px;}
-.btn-search img,.btn-search,.search{
+
+.btn-search img {
+    width: 15px;
+}
+
+.btn-search img,
+.btn-search,
+.search {
     background-color: white;
 }
-.btn-search:hover{
+
+.btn-search:hover {
     cursor: pointer;
 }
+
+
 /* ---------------------------------------------------------------- */
 
 
@@ -125,45 +151,49 @@ fieldset{
     right: 5px;
 } */
 
-nav{
+nav {
     background-color: #F0B27A;
     width: 100%;
 }
-nav li{
+
+nav li {
     list-style: none;
     padding: 15px 10px;
 }
-nav a{
+
+nav a {
     color: #CC0700;
     text-decoration: none;
     padding: 15px;
-    background-color: #F0B27A;    
+    background-color: #F0B27A;
 }
-nav ul{
+
+nav ul {
     text-align: center;
 }
 
-nav a:hover{
-    background-color:#000;
+nav a:hover {
+    background-color: #000;
     color: #F39C12;
 }
+
 
 /*nav a:visited{
     color: black;
 }*/
 
+
 /* -------------------------------fin header-------------------------------------- */
 
+
 /* -------------------Inicio footer-------------- */
- 
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #F0B27A;
- 
 }
-
 
 footer article {
     border-color: black;
@@ -175,24 +205,22 @@ footer article {
     text-align: center;
 }
 
-
-
-footer article h5{
+footer article h5 {
     text-align: center;
     padding-top: 10px;
 }
 
-footer article p{
+footer article p {
     display: block;
     padding-left: 10px;
     padding-top: 10px;
 }
+
 article .sn-icons {
     width: 100%;
     height: 80%;
     display: flex;
     justify-content: space-around;
-    
 }
 
 article nav ul {
@@ -200,28 +228,35 @@ article nav ul {
     justify-content: center;
 }
 
-.sn-icons>a>img{
-    width: 45px; 
+.sn-icons>a>img {
+    width: 45px;
 }
+
+
 /* .sn-icons a{
     display: inline-flex;
 } */
 
+
 /* -------------------Fin footer-------------- */
-.logo{
-    order:0;
+
+.logo {
+    order: 0;
 }
-.ticket{
-    position:relative;
-    order:1
+
+.ticket {
+    position: relative;
+    order: 1
 }
-.buscador{
-    order:3
+
+.buscador {
+    order: 3
 }
-.menu{
+
+.menu {
     order: 5;
     margin-top: 30px;
-} 
+}
 
 header {
     position: fixed;
@@ -230,9 +265,13 @@ header {
     z-index: 1000;
 }
 
+
 /* --------------------MENU RESPONSIVE------------------------ */
+
+
 /* Configuracion del boton Hamburguesa */
-a.desplegable{
+
+a.desplegable {
     display: block;
     width: 55px;
     height: 55px;
@@ -242,54 +281,52 @@ a.desplegable{
     left: 0;
     background-image: url(../img/hamburger.gif);
     cursor: pointer;
-
 }
-.menu{
-    
+
+.menu {
     display: none;
 }
+
+
 /* 47em (min-width:37.5em) */
-@media screen and (min-width:30em) and (min-width:48.68em){
-    
-    .menu{
+
+@media screen and (min-width:30em) and (min-width:48.68em) {
+    .menu {
         display: block;
     }
-    a.desplegable{
+    a.desplegable {
         display: none;
     }
-    nav ul{
+    nav ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-/* ************************************* */
-     .logo{
-        order:-1;
+    /* ************************************* */
+    .logo {
+        order: -1;
         align-self: center;
     }
-    .ticket{
-        order:0
+    .ticket {
+        order: 0
     }
-    .buscador{
-        order:1
+    .buscador {
+        order: 1
     }
-    .menu{
+    .menu {
         order: 5;
         margin-top: 0px
-
-    } 
+    }
     header {
         position: initial;
         top: initial;
         background-color: white;
         z-index: initial;
     }
-
-    footer article{
+    footer article {
         width: 30%;
     }
-
-    footer{
+    footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -298,35 +335,30 @@ a.desplegable{
         margin-top: 20px;
         padding: 10px;
     }
-    
     article .sn-icons {
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-    /* article .sn-icons{
+        /* article .sn-icons{
         justify-content: space-around;
     
     } */
-    
-
-}
-@media screen and (min-width:48.5em){
-    article nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-}
-
-
-@media screen and (min-width: 54em){
-	.buscador{
-        order: 1;
     }
-    .ticket{
-        order:2;
-    }
-}
-/* ----------------------------------------------------------- */
-/* #divCirculo{
+    @media screen and (min-width:48.5em) {
+        article nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        @media screen and (min-width: 54em) {
+            .buscador {
+                order: 1;
+            }
+            .ticket {
+                order: 2;
+            }
+        }
+        /* ----------------------------------------------------------- */
+        /* #divCirculo{
    visibility: hidden; 
 } */

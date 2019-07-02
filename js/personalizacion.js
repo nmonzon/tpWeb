@@ -1,75 +1,105 @@
-
-function changeNameEvent(){
-    var nameEvent=document.getElementById('name-event');
-    document.getElementById('newNameEvent').innerHTML= nameEvent.value.toUpperCase();
+function changeNameEvent() {
+    var nameEvent = document.getElementById('name-event');
+    document.getElementById('newNameEvent').innerHTML = nameEvent.value.toUpperCase();
 }
 
-function changeColour(value)
-{
-    switch(value)
-    {
+function changeColour(value) {
+    switch (value) {
         case 'b':
             color = "lightskyblue";
-        break;
+            break;
         case 'r':
             color = "crimson";
-        break;
+            break;
         case 'gr':
             color = "lightslategrey";
-        break;
+            break;
         case 'g':
             color = "forestgreen";
-        break;
+            break;
         case 'p':
             color = "lightpink";
-        break;
+            break;
     }
     document.getElementById("newNameEvent").style.color = color;
 }
 
-function changeBackgroundColour(value)
-{
-    switch(value)
-    {
+function changeBackgroundColour(value) {
+    switch (value) {
         case 'bkg1':
             background = "url(./img/background/background1.jpg)";
-        break;
+            break;
         case 'bkg2':
             background = "url(./img/background/background2.jpg)";
-        break;
+            break;
         case 'bkg3':
             background = "url(./img/background/background3.jpg)";
-        break;
+            break;
         case 'bkg4':
             background = "url(./img/background/background4.jpg)";
-        break;
+            break;
         case 'bkg5':
             background = "url(./img/background/background5.jpg)";
-        break;
+            break;
     }
     document.getElementsByClassName("photoEvent")[0].style.backgroundImage = background;
 }
 
-function changeFontSize(value){
-    
+function changeFontPosition(value) {
+
+
+    switch (value) {
+        case 'topRight':
+            document.getElementById("dateEvent").style.top = '20px';
+            document.getElementById("dateEvent").style.right = '20px';
+            document.getElementById("dateEvent").style.bottom = '';
+            document.getElementById("dateEvent").style.left = '';
+            break;
+        case 'topLeft':
+            document.getElementById("dateEvent").style.top = '20px';
+            document.getElementById("dateEvent").style.right = null;
+            document.getElementById("dateEvent").style.bottom = null;
+            document.getElementById("dateEvent").style.left = '20px';
+            break;
+        case 'bottomRight':
+            document.getElementById("dateEvent").style.top = null;
+            document.getElementById("dateEvent").style.right = '20px';
+            document.getElementById("dateEvent").style.bottom = '20px';
+            document.getElementById("dateEvent").style.left = null;
+            break;
+    }
+}
+
+function changeFontSize(value) {
+
     var size = '20';
-    switch(value)
-    {
+    switch (value) {
         case '20':
             size = "20px";
-        break;
+            break;
         case '28':
             size = "28px";
-        break;
+            break;
         case '32':
             size = "32px";
-        break;
+            break;
         case '48':
             size = "48px";
-        break;
+            break;
         case '60':
             size = "60px";
-        break;
+            break;
     }
     document.getElementById("newNameEvent").style.fontSize = size;
+}
+
+
+window.onload = function() {
+    document.getElementById("date-time").addEventListener("change", function() {
+        var input = this.value;
+        //var dateEntered = new Date(input);
+        document.getElementById("dateEvent").innerHTML = this.value
+            //console.log(input); //e.g. 2015-11-13
+            //console.log(dateEntered); //e.g. Fri Nov 13 2015 00:00:00 GMT+0000 (GMT Standard Time)
+    });
 }

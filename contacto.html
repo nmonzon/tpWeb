@@ -11,6 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery.min.js"></script>
     <script src="js/funciones.js"></script>
+    <script src="js/index.js"></script>
+    
+    <script src="../tpWeb/js/validacion.js"></script>
+
     <title>Contacto</title>
 </head>
 
@@ -61,17 +65,19 @@
     </header>
     <main>
         <div class="data-container">
-            <form action="" method="post" id="form1">
+            <form action="" method="post" id="form1" onsubmit="return validar()">
                 <label for="nombre">NOMBRE</label><br>
-                <input type="text" name="nombre" id="name"><br>
+                <input type="text" name="nombre" id="name" onkeyup="validar()"><br>
                 <label for="last-name">APELLIDO</label><br>
-                <input type="text" name="last-name" id="last-name"><br>
+                <input type="text" name="last-name" id="last-name" onkeyup="validar()"><br>
                 <label for="mail">CORREO ELECTRONICO</label><br>
                 <input type="email" name="mail" id="mail"><br>
                 <label for="phone">TELEFONO</label><br>
                 <input type="tel" name="phone" id="phone"><br>
                 <label for="msg">MENSAJE</label><br>
-                <textarea name="msg" id="msg"></textarea><br>
+                <textarea name="msg" id="msg"  onkeydown="return cuentaCaracteres(event,this.value,10)" onkeyup="return cuentaCaracteres(event,this.value,10)"></textarea><br>
+                <div class="textAreaMensaje" id="textAreaMensaje"></div>
+                <div id="mensaje" class="error"></div>
                 <div class="button"><br>
                     <button type="submit" class="sbmit">Enviar</button><br>
                 </div>

@@ -15,3 +15,15 @@ $(window).resize(function(){
     }
 });
 });
+
+window.onload = function () {
+  // document.getElementById('divCirculo').style.visibility = "hidden"; 
+  console.log("se recargo el documento");
+  //cuando se vuelve a recargar el documento,obtenemos el numero que quedo almacenado en el localStorage
+  if (localStorage.getItem("contadorEnStorage") > 0) {
+      document.getElementById('circuloNumero').innerHTML = localStorage.getItem("contadorEnStorage");    
+  }else{
+      document.getElementById('circuloNumero').innerHTML = 0;
+  }
+  //showAutomaticSlides();
+}

@@ -1,3 +1,4 @@
+
 function changeNameEvent() {
     var nameEvent = document.getElementById('name-event');
     document.getElementById('newNameEvent').innerHTML = nameEvent.value.toUpperCase();
@@ -95,6 +96,15 @@ function changeFontSize(value) {
 
 
 window.onload = function() {
+
+    console.log("se recargo el documento");
+    //cuando se vuelve a recargar el documento,obtenemos el numero que quedo almacenado en el localStorage
+    if (localStorage.getItem("contadorEnStorage") > 0) {
+        document.getElementById('circuloNumero').innerHTML = localStorage.getItem("contadorEnStorage");    
+    }else{
+        document.getElementById('circuloNumero').innerHTML = 0;
+    }
+
     document.getElementById("date-time").addEventListener("change", function() {
         var input = this.value;
         //var dateEntered = new Date(input);

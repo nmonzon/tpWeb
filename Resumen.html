@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/resumen.js"></script>
     <title>Detalle evento</title>
 </head>
 
@@ -47,9 +48,10 @@
         <!-- ------------------------------------------------------------------------------ -->
         <nav class="menu">
             <ul>
-                <li><a href="index.html" class="activo">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="resumen.html">Resumen</a></li>
+                <li><a href="personalizacion.html">Personalización</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -71,8 +73,60 @@
                 </tr>
                 <tr>
                     <td>
-                        <p>Prueba</p>
+                        <p>20/01/2019</p>
                     </td>
+                    <td>
+                        <p>Curso Blues Bejar</p>
+                    </td>
+                    <td><button class="boton1"><p>PERSONALIZAR</p></button></td>
+                    <td>
+                        <p>$100</p>
+                    </td>
+                    <td>
+                        <input id="inputE1" onkeyup="calcularTotalEntrada1()" type="number">
+                    </td>
+                    <td>
+                        <p id="totalE1" onchange="calcularTotal()"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>23/04/2019</p>
+                    </td>
+                    <td>
+                        <p>Curso Improvisacion</p>
+                    </td>
+                    <td><button class="boton2"><p>MODIFICAR PERSONALIZACIÓN</p></button></td>
+                    <td>
+                        <p>$200</p>
+                    </td>
+                    <td>
+                        <input id="inputE2" onkeyup="calcularTotalEntrada2()" type="number">
+                    </td>
+                    <td>
+                        <p id="totalE2"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>27/06/2019</p>
+                    </td>
+                    <td>
+                        <p>FiJazz</p>
+                    </td>
+                    <td><button class="boton1"><p>PERSONALIZAR</p></button></td>
+                    <td>
+                        <p>$300</p>
+                    </td>
+                    <td>
+                        <input id="inputE3" onkeyup="calcularTotalEntrada3()" type="number">
+                    </td>
+                    <td>
+                        <p id="totalE3"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
                     <td></td>
                     <td><button class="boton1"><p>PERSONALIZAR</p></button></td>
                     <td></td>
@@ -90,30 +144,6 @@
                 <tr>
                     <td></td>
                     <td></td>
-                    <td><button class="boton1"><p>PERSONALIZAR</p></button></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><button class="boton1"><p>PERSONALIZAR</p></button></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><button class="boton2"><p>MODIFICAR PERSONALIZACIÓN</p></button></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -125,14 +155,32 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    <td>
+                        <p id="total"></p>
+                    </td>
                 </tr>
             </table>
             <br>
             <div class="segfin">
-                <button class="btn-buy"><p>FINALIZAR COMPRA</p></button>
+                <button class="btn-buy" onclick="mostrarModal()"><p>FINALIZAR COMPRA</p></button>
                 <button class="btn-buy"><img src="img/entradas.svg" alt=""><p>Seguir Comprando</p></button>
             </div>
+            <div id="miModal" class="modal">
+                    <div class="flex" id="flex">
+                        <div class="contenido-modal">
+                            <div class="modal-header flex">
+                                <span class="close" id="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div>Gracias por su compra.</div>
+                                <div>Titulo: Curso Blues Bejar, Precio: <span id="e1"></span></div>
+                                <div>Titulo: Curso Improvisacion, Precio:<span id="e2"></span></div>
+                                <div>Titulo: FiJazz, Precio:<span id="e3"></span></div>
+                                <div>Total: <span id="tot"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </form>
         <br>
     </main>
@@ -147,10 +195,11 @@
             <h5>Menu inferior</h5>
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="resumen.html">Resumen</a></li>
+                    <li><a href="personalizacion.html">Personalización</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </article>

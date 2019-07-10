@@ -80,8 +80,9 @@ function validar() {
      var nombre = $("#name").val();
      var apellido = $("#last-name").val();
      var email = $("#mail").val();
+
     //  var regexnombre =  /^[a-zA-Z]+$/;
-    var regexemail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
+    var regexemail = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/;
      if (nombre == '') {
         mensaje += "<p>El nombre es obligatorio</p>";
         error = true;
@@ -92,7 +93,7 @@ function validar() {
         error = true;
     }
 
-    if ((email.match(regexemail)) {
+    if (!email.match(regexemail)) {
         mensaje += "<p>Debe ser un texto</p>";
         error = true;
     }

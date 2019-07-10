@@ -39,7 +39,7 @@ function contadorEntradas(title, dateEvent) {
         //se copia el valor del localStorage en circuloNumero
         document.getElementById('circuloNumero').innerHTML = localStorage.getItem("contadorEnStorage");
 
-
+        window.location.href = './formulario.html';
     } else {
         prompt("El naavegador no es compatible con LocalStorage");
     }

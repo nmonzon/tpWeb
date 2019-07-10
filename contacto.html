@@ -65,17 +65,17 @@
     </header>
     <main>
         <div class="data-container">
-            <form action="" method="post" id="form1" onsubmit="return validar()">
+            <form action="" method="get" id="form1" onsubmit="return validar()">
                 <label for="nombre">NOMBRE</label><br>
                 <input type="text" name="nombre" id="name" onkeyup="validar()"><br>
                 <label for="last-name">APELLIDO</label><br>
                 <input type="text" name="last-name" id="last-name" onkeyup="validar()"><br>
                 <label for="mail">CORREO ELECTRONICO</label><br>
-                <input type="text" name="mail" id="mail"><br>
+                <input type="text" name="mail" id="mail" onkeyup="validar()"><br>
                 <label for="phone">TELEFONO</label><br>
-                <input type="tel" name="phone" id="phone"><br>
+                <input type="tel" name="phone" id="phone" onkeyup="validar()"><br>
                 <label for="msg">MENSAJE</label><br>
-                <textarea name="msg" id="msg"  onkeydown="return cuentaCaracteres(event,this.value,10)" onkeyup="return cuentaCaracteres(event,this.value,10)"></textarea><br>
+                <textarea name="msg" id="msg" onkeydown="return cuentaCaracteres(event,this.value,10)" onkeyup="return cuentaCaracteres(event,this.value,10)"></textarea><br>
                 <div class="textAreaMensaje" id="textAreaMensaje"></div>
                 <div id="mensaje" class="error"></div>
                 <div class="button"><br>

@@ -75,6 +75,11 @@ main section{
 }
 
 .detailEvent{
+   
+    position: relative;
+    top: 9em;
+    margin-bottom: 10em;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -106,7 +111,7 @@ main section{
 }
 
 .infoEvent .enrollToEvent{
-    width: 60%;
+    width: 75%;
     font-size: 1em ;
     font-weight: bold;
     color: #F0B27A;
@@ -136,12 +141,28 @@ main section{
     .event1{
         width: 40%;
     }
+    .detailEvent{
+        flex-direction: row;
+    }
+    .detailEvent article {
+        width: 40%;
+    }
+    .infoEvent .enrollToEvent {
+        width: 60%;
+    }
 }
 /* -------------------- 48 EMs dispositivos medianos ------------------------ */
 @media screen and (min-width:50em){
     .event1{
         width: 30%;
     }
+
+    .detailEvent{
+        position: initial;
+        top: 1em;
+        margin-bottom: 1em;
+    }
+    
 }
 @media screen and (min-width:70.9em){
     .event1{

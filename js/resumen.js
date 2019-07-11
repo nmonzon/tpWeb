@@ -32,37 +32,37 @@ function calcularTotalEntrada2(){
     document.getElementById('total').innerHTML = total1 + total2 + total3;
 }
 
-function calcularTotalEntrada3(){
-    total3 = document.getElementById('inputE3').value * 200;
-    document.getElementById('totalE3').innerHTML = total3;
-    document.getElementById('total').innerHTML = total1 + total2 + total3;
-}
+// function calcularTotalEntrada3(){
+//     total3 = document.getElementById('inputE3').value * 200;
+//     document.getElementById('totalE3').innerHTML = total3;
+//     document.getElementById('total').innerHTML = total1 + total2 + total3;
+// }
 
-let modal = document.getElementById('miModal');
-let flex = document.getElementById('flex');
-let abrir = document.getElementById('abrir');
-let cerrar = document.getElementById('close');
+// let modal = document.getElementById('miModal');
+// let flex = document.getElementById('flex');
+// let abrir = document.getElementById('abrir');
+// let cerrar = document.getElementById('close');
 
-abrir.addEventListener('click', function(){
-    modal.style.display = 'block';
-});
+// abrir.addEventListener('click', function(){
+//     modal.style.display = 'block';
+// });
 
-cerrar.addEventListener('click', function(){
-    modal.style.display = 'none';
-});
+// cerrar.addEventListener('click', function(){
+//     modal.style.display = 'none';
+// });
 
-window.addEventListener('click', function(e){
-    console.log(e.target);
-    if(e.target == flex){
-        modal.style.display = 'none';
-    }
-});
+// window.addEventListener('click', function(e){
+//     console.log(e.target);
+//     if(e.target == flex){
+//         modal.style.display = 'none';
+//     }
+// });
 
-function mostrarModal(){
-    document.getElementById('e1').innerHTML = total1;
-    document.getElementById('e2').innerHTML = total2;
-    document.getElementById('e3').innerHTML = total3;
-    document.getElementById('tot').innerHTML = total1 + total2 + total3;
-    modal.style.display = 'block';
-}
+// function mostrarModal(){
+//     document.getElementById('e1').innerHTML = total1;
+//     document.getElementById('e2').innerHTML = total2;
+//     document.getElementById('e3').innerHTML = total3;
+//     document.getElementById('tot').innerHTML = total1 + total2 + total3;
+//     modal.style.display = 'block';
+// }
 

@@ -9,10 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery.min.js"></script>
     <script src="js/funciones.js"></script>
+    <script src="js/modal.js"></script>
     <title>Detalle evento</title>
 </head>
 
 <body>
+    
     <header>
         <div class="logo"><img src="img/logojazz.jpg" alt=""></div>
         <form class="buscador">
@@ -76,8 +78,13 @@
                     mismo participan alumnos de Chile, Ecuador, Perú, Costa Rica, Uruguay, Brasil y de varias provincias Argentinas 
                     como Córdoba, San Luis, Salta, Provincia de Buenos Aires y Capital Federal y así contribuir a formar audiencias 
                     que favorezcan la divulgación del Jazz.</p>
-                <button class="enrollToEvent" type="submit" class="sbmit">INSCRIBIRSE</button>
+                <button class="enrollToEvent" type="submit" id="abrir-modal" class="sbmit">INSCRIBIRSE</button>
             </article>
+            
+                    <div class="modal" id="miModal">GRACIAS POR SU COMPRA
+                    <button id="cerrarModal">Cerrar</button>
+                </div>
+                
         </section>
 
         <h3>UBICACION</h3>

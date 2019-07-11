@@ -3,9 +3,12 @@
 }
 
 main{
-    min-width: 530px;;
+    /* min-width: 530px; */
+    position: relative;
+    top: 9em;
+    margin-bottom: 10em;
     color: #ccc;
-    margin: 30px;
+    /* margin: 30px; */
     background-color: white;
 }
 .data-container,#form1{
@@ -15,21 +18,26 @@ main{
 }
 .data-container{
     margin-bottom: 50px;
-    flex-direction: row;
-    min-width: 850px;;
-    margin-left: 50px;
+    flex-direction: column;
+    /* flex-direction: row; */
+    /* min-width: 850px; */
+    /* margin-left: 50px; */
     /* margin: 0 10%; */
 }
 #form1{
-    width: 50%;
+    order: 2;
+    width: 100%;
+    /* width: 50%; */
     padding: 20px;
 }
 label{
+    width: 100%;
     margin: 10px 0px;
     color: #000;
     margin-bottom: auto;
 }
 .sbmit{
+    width: 10em;
     font-size: 1em ;
     font-weight: bold;
     color: #F0B27A;
@@ -82,7 +90,7 @@ input::-moz-focus-outer{
 flex-direction: column;
 justify-content: space-around;
 align-content: center;
-    width: 45%;
+    /* width: 45%; */
     padding: 25px 0;
 }
 .company-data img{
@@ -98,3 +106,31 @@ align-content: center;
 .map{
     color: #417FF3;
 }
+
+@media screen and (min-width:30em) and (min-width:37.5em) {
+
+  .data-container{
+      flex-direction: column;
+  }
+  #form1 {
+    order: 2;
+    width: 65%;
+  }
+  .data-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .company-data {
+    width: max-content;
+  }
+  label {
+    margin: 1px;
+  }
+}
+  /* -------------------- 48 EMsaprox dispositivos medianos ------------------------ */
+  
+  @media screen and (min-width:50em) {
+     
+     
+  
+  }
